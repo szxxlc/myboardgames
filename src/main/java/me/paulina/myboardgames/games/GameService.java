@@ -1,30 +1,20 @@
 package me.paulina.myboardgames.games;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class GameService {
+    private final GameRepository gameRepository;
+
+    @Autowired
+    public GameService(GameRepository gameRepository) {
+        this.gameRepository = gameRepository;
+    }
+
     List<Game> getGames(){
-        return List.of(
-                new Game(
-                        1L,
-                        "Carcassone",
-                        2,
-                        6,
-                        8,
-                        "medium"
-                ),
-                new Game(
-                        2L,
-                        "Ticket to Ride",
-                        2,
-                        5,
-                        10,
-                        "medium"
-                )
-        );
+        return gameRepository.findAll();
     }
 }

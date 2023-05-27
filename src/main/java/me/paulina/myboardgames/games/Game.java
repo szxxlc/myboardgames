@@ -1,7 +1,21 @@
 package me.paulina.myboardgames.games;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table
 public class Game {
 
+    @Id
+    @SequenceGenerator(
+            name = "game_sequence",
+            sequenceName = "game_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy= GenerationType.SEQUENCE,
+            generator = "game_sequence"
+    )
     private Long id;
     private String nameOfGame;
     private Integer minNumberOfPeople;
