@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="draftsState">
+      <draftsState>
+        <option name="requests">
+          <list>
+            <requestState>
+              <option name="body">
+                <bodyState>
+                  <option name="raw" value="{&#10;  &quot;nameOfGame&quot;: &quot;nameOfGame_nl78&quot;,&#10;  &quot;minNumberOfPeople&quot;: 637,&#10;  &quot;maxNumberOfPeople&quot;: 484,&#10;  &quot;minAge&quot;: 955,&#10;  &quot;gameLength&quot;: &quot;Short&quot;&#10;}" />
+                  <option name="type" value="JSON" />
+                </bodyState>
+              </option>
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="4dad7f2c-bd87-44e6-9cb9-978edc5d82c3" />
+              <option name="method" value="PUT" />
+              <option name="name" value="Draft" />
+              <option name="queryParams">
+                <list>
+                  <queryParamState>
+                    <option name="key" value="minNumberOfPeople" />
+                    <option name="value" value="2" />
+                  </queryParamState>
+                  <queryParamState>
+                    <option name="key" value="maxNumberOfPeople" />
+                    <option name="value" value="6" />
+                  </queryParamState>
+                </list>
+              </option>
+              <option name="url" value="http://localhost:8080/api/v1/game/1?minNumberOfPeople=2&amp;maxNumberOfPeople=6" />
+            </requestState>
+          </list>
+        </option>
+      </draftsState>
+    </option>
+    <option name="id" value="17e1307f-c2f8-4d48-8b23-be88fcb1df3c" />
+  </component>
+</project>

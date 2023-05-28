@@ -26,8 +26,15 @@ public class GameConfig {
                     8,
                     "Medium"
             );
+            Game ageOfSteam = new Game(
+                    "Age of Steam",
+                    1,
+                    6,
+                    13,
+                    "Long"
+            );
             gameRepository.saveAll(
-                    List.of(carcassonne, ticketToRide)
+                    List.of(carcassonne, ticketToRide, ageOfSteam)
             );
 
         };
